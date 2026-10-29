@@ -1,32 +1,257 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses in a nutshell — DevOps &amp; Cloud</title>
 
-<head>
-    <title>Courses in a nutshell</title>
-</head>
+    <!-- Google Fonts (same as Reveal.js course theme) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 
-<body>
-    <h1>Courses in a nutshell</h1>
-    <ul>
-        <li>
-            <a href="network">Cours Réseau</a>
-        </li>
-        <li>
-            <a href="cloud">Cours Cloud</a>
-        </li>
-        <li>
-            <a href="git">Cours Git</a>
-        </li>
-        <li>
-            <a href="devops">Cours DevOps</a>
-        </li>
-        <li>
-            <a href="dockerkube">Cours Docker & Kubernetes</a>
-        </li>
-        <li>
-            <a href="terraform">Cours Terraform & IaC</a>
-        </li>
-    </ul>
-</body>
+    <!-- Custom Modern Light Theme -->
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <main class="container">
+      <!-- Hero Banner -->
+      <header class="hero-slide">
+        <h1>Courses</h1>
+        <h4>In a nutshell</h4>
+        <p class="hero-subtitle">
+          Interactive slide decks and hands-on labs covering Network fundamentals, Cloud Computing, Git, DevOps, Containers, and Infrastructure as Code.
+        </p>
+        <div class="hero-links">
+          <a target="_blank" rel="noopener" href="https://twitter.com/laurentgrangeau">@laurentgrangeau</a>
+          <span class="sep">|</span>
+          <a target="_blank" rel="noopener" href="https://github.com/laurentgrangeau">github.com/laurentgrangeau</a>
+          <span class="sep">|</span>
+          <a target="_blank" rel="noopener" href="https://github.com/devops-cloud-courses">github.com/devops-cloud-courses</a>
+        </div>
+      </header>
 
+      <!-- Courses Section -->
+      <section aria-labelledby="courses-heading">
+        <div class="section-header">
+          <h2 id="courses-heading">Course Materials</h2>
+        </div>
+
+        <div class="courses-grid">
+          <!-- 1. Network Course -->
+          <article class="course-card">
+            <div>
+              <div class="course-card-top">
+                <span class="course-badge">01 / NETWORK</span>
+                <div class="course-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="6" height="6" rx="1"></rect>
+                    <rect x="16" y="2" width="6" height="6" rx="1"></rect>
+                    <rect x="9" y="16" width="6" height="6" rx="1"></rect>
+                    <path d="M5 8v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"></path>
+                    <path d="M12 13v3"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>Network Course</h3>
+              <p>Network architecture, IPv4 addressing &amp; CIDR subnetting, routing, DNS, NAT, and firewall fundamentals.</p>
+              <div class="course-tags">
+                <code>IP / CIDR</code>
+                <code>Routing</code>
+                <code>DNS</code>
+                <code>Firewall</code>
+              </div>
+            </div>
+            <div class="course-footer">
+              <a href="network" class="btn-primary">Open slides &rarr;</a>
+              <a href="https://github.com/devops-cloud-courses/network" target="_blank" rel="noopener" class="repo-link">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- 2. Cloud Course -->
+          <article class="course-card">
+            <div>
+              <div class="course-card-top">
+                <span class="course-badge">02 / CLOUD</span>
+                <div class="course-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>Cloud Course</h3>
+              <p>Cloud Computing principles, service models (IaaS, PaaS, SaaS, Serverless), scalability, and cloud architecture patterns.</p>
+              <div class="course-tags">
+                <code>IaaS</code>
+                <code>PaaS</code>
+                <code>SaaS</code>
+                <code>Serverless</code>
+              </div>
+            </div>
+            <div class="course-footer">
+              <a href="cloud" class="btn-primary">Open slides &rarr;</a>
+              <a href="https://github.com/devops-cloud-courses/cloud" target="_blank" rel="noopener" class="repo-link">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- 3. Git Course -->
+          <article class="course-card">
+            <div>
+              <div class="course-card-top">
+                <span class="course-badge">03 / GIT</span>
+                <div class="course-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="18" r="3"></circle>
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                    <line x1="6" y1="9" x2="6" y2="21"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3>Git Course</h3>
+              <p>Distributed version control, branching strategies, merging, rebasing, and collaborative team workflows.</p>
+              <div class="course-tags">
+                <code>Branches</code>
+                <code>Merge / Rebase</code>
+                <code>Workflows</code>
+                <code>GitHub</code>
+              </div>
+            </div>
+            <div class="course-footer">
+              <a href="git" class="btn-primary">Open slides &rarr;</a>
+              <a href="https://github.com/devops-cloud-courses/git" target="_blank" rel="noopener" class="repo-link">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- 4. DevOps Course -->
+          <article class="course-card">
+            <div>
+              <div class="course-card-top">
+                <span class="course-badge">04 / DEVOPS</span>
+                <div class="course-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>DevOps Course</h3>
+              <p>DevOps culture, agility, Continuous Integration (CI), Continuous Delivery &amp; Deployment (CD), and Continuous Operations.</p>
+              <div class="course-tags">
+                <code>Culture</code>
+                <code>CI / CD</code>
+                <code>Patterns</code>
+                <code>Operations</code>
+              </div>
+            </div>
+            <div class="course-footer">
+              <a href="devops" class="btn-primary">Open slides &rarr;</a>
+              <a href="https://github.com/devops-cloud-courses/devops" target="_blank" rel="noopener" class="repo-link">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- 5. Docker & Kubernetes Course -->
+          <article class="course-card">
+            <div>
+              <div class="course-card-top">
+                <span class="course-badge">05 / CONTAINERS</span>
+                <div class="course-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3>Docker &amp; Kubernetes Course</h3>
+              <p>Application containerization with Docker and production-grade container orchestration with Kubernetes.</p>
+              <div class="course-tags">
+                <code>Docker</code>
+                <code>Images</code>
+                <code>Kubernetes</code>
+                <code>Pods &amp; Services</code>
+              </div>
+            </div>
+            <div class="course-footer">
+              <a href="dockerkube" class="btn-primary">Open slides &rarr;</a>
+              <a href="https://github.com/devops-cloud-courses/dockerkube" target="_blank" rel="noopener" class="repo-link">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- 6. Terraform & IaC Course -->
+          <article class="course-card">
+            <div>
+              <div class="course-card-top">
+                <span class="course-badge">06 / IAC</span>
+                <div class="course-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <h3>Terraform &amp; IaC Course</h3>
+              <p>Declarative cloud infrastructure provisioning, state management, reusable modules, and IaC best practices.</p>
+              <div class="course-tags">
+                <code>Terraform</code>
+                <code>HCL</code>
+                <code>State</code>
+                <code>Modules</code>
+              </div>
+            </div>
+            <div class="course-footer">
+              <a href="terraform" class="btn-primary">Open slides &rarr;</a>
+              <a href="https://github.com/devops-cloud-courses/terraform" target="_blank" rel="noopener" class="repo-link">GitHub &#8599;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Hands-on Labs & Projects Section -->
+      <section aria-labelledby="labs-heading">
+        <div class="section-header">
+          <h2 id="labs-heading">Hands-on Labs &amp; Projects</h2>
+        </div>
+
+        <div class="labs-grid">
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/lab-git-ci" target="_blank" rel="noopener">
+            <span>Lab Git / CI</span>
+            <span class="lab-type">LAB &#8599;</span>
+          </a>
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/lab-docker" target="_blank" rel="noopener">
+            <span>Lab Docker</span>
+            <span class="lab-type">LAB &#8599;</span>
+          </a>
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/lab-kubernetes" target="_blank" rel="noopener">
+            <span>Lab Kubernetes</span>
+            <span class="lab-type">LAB &#8599;</span>
+          </a>
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/lab-cloud-iaas" target="_blank" rel="noopener">
+            <span>Lab Cloud IaaS</span>
+            <span class="lab-type">LAB &#8599;</span>
+          </a>
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/lab-cloud-paas-serverless" target="_blank" rel="noopener">
+            <span>Lab Cloud PaaS / Serverless</span>
+            <span class="lab-type">LAB &#8599;</span>
+          </a>
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/lab-terraform" target="_blank" rel="noopener">
+            <span>Lab Terraform</span>
+            <span class="lab-type">LAB &#8599;</span>
+          </a>
+          <a class="lab-card" href="https://github.com/devops-cloud-courses/microservices-project" target="_blank" rel="noopener">
+            <span>Microservice Project</span>
+            <span class="lab-type">PROJECT &#8599;</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer / Author -->
+      <footer class="author-card">
+        <blockquote>
+          <strong>Laurent Grangeau</strong><br>
+          <span>Cloud Solution Architect @ Google</span>
+        </blockquote>
+        <div class="footer-meta">devops-cloud-courses.github.io</div>
+      </footer>
+    </main>
+  </body>
 </html>
